@@ -17,7 +17,9 @@
     "undici-types": ""
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "s": "bun index.js",
+    "d": "bun --hot index.js "
   },
   "author": "Rushil Gupta",
   "license": "ISC"
