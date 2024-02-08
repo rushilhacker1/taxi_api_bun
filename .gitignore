@@ -178,3 +178,4 @@ mydb.sqlite
 mydb.sqlite-shm
 mydb.sqlite-wal
 .devcontainer/
+bun.lockb
