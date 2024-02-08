@@ -61,16 +61,17 @@ const server = Bun.serve({
               return new Response(JSON.stringify(query.values()))
             } else {
             const query = db.query("SELECT * FROM Customer where id = ".concat(need))
-            const result = query.values()
+            const result = query.get()
             log(result)
             log(need)
-            if (result == "[]") {
+            if (result == null) {
               throw new Error("undefined");
             } else {
               return new Response(JSON.stringify(result));
             }
           }
           case "PUT":
+            log("sjdrw")
             const data = await req.json();
             const sql = `
             INSERT INTO Customer (
