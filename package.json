@@ -3,7 +3,8 @@
   "module": "index.js",
   "type": "module",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "tailwindcss": "^3.4.1"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
@@ -13,7 +14,7 @@
   "main": "index.js",
   "dependencies": {
     "bun-types": "",
-    "typescript": "",
+    "mongodb": "^6.3.0",
     "undici-types": ""
   },
   "scripts": {
